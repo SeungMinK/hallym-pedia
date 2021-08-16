@@ -8,6 +8,8 @@ import {
   Button,
 } from "react-bootstrap";
 import { Link, Route, Switch } from "react-router-dom";
+import SignIn from "./Sign/SignIn.js";
+import SignUp from "./Sign/SignUp.js";
 
 function App() {
   return (
@@ -15,7 +17,7 @@ function App() {
       <Navbar bg="dark" variant="dark">
         <Container>
           <Navbar.Brand href="#home">Hallym-Pedia</Navbar.Brand>
-          <Nav className="me-auto">
+          <Nav className="justify-content-start">
             <Nav.Link as={Link} to="/Movie">
               영화
             </Nav.Link>
@@ -36,7 +38,7 @@ function App() {
               />
               <Button variant="outline-success">Search</Button>
             </Form>
-            <Nav.Link as={Link} to="/Login">
+            <Nav.Link as={Link} to="/SignIn">
               로그인
             </Nav.Link>
             <Nav.Link as={Link} to="/SignUp">
@@ -60,11 +62,11 @@ function App() {
         <Route path="/Search">
           <div>검색화면 </div>
         </Route>
-        <Route path="/Login">
-          <div>로그인화면 </div>
+        <Route path="/SignIn">
+          <SignIn></SignIn>
         </Route>
         <Route path="/SignUp">
-          <div>회원가입화면 </div>
+          <SignUp></SignUp>
         </Route>
       </Switch>
     </>
