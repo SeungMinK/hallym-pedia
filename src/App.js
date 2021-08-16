@@ -8,8 +8,11 @@ import {
   Button,
 } from "react-bootstrap";
 import { Link, Route, Switch } from "react-router-dom";
-import SignIn from "./Sign/SignIn.js";
-import SignUp from "./Sign/SignUp.js";
+import SignIn from "./Sign/SignIn";
+import SignUp from "./Sign/SignUp";
+import Movie from "./Content/Movie";
+import Tv from "./Content/Tv";
+import Book from "./Content/Book";
 
 function App() {
   return (
@@ -51,13 +54,13 @@ function App() {
 
       <Switch>
         <Route path="/Movie">
-          <div>영화화면 </div>
+          <Movie></Movie>
         </Route>
         <Route path="/Tv">
-          <div>티비화면 </div>
+          <Tv></Tv>
         </Route>
         <Route path="/Book">
-          <div>책화면 </div>
+          <Book></Book>
         </Route>
         <Route path="/Search">
           <div>검색화면 </div>
