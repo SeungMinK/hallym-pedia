@@ -7,7 +7,7 @@ import {
   FormControl,
   Button,
 } from "react-bootstrap";
-import "bootstrap/dist/css/bootstrap.min.css";
+import { Link, Route, Switch } from "react-router-dom";
 
 function App() {
   return (
@@ -16,9 +16,15 @@ function App() {
         <Container>
           <Navbar.Brand href="#home">Hallym-Pedia</Navbar.Brand>
           <Nav className="me-auto">
-            <Nav.Link>영화</Nav.Link>
-            <Nav.Link>TV프로그램</Nav.Link>
-            <Nav.Link>책</Nav.Link>
+            <Nav.Link as={Link} to="/Movie">
+              영화
+            </Nav.Link>
+            <Nav.Link as={Link} to="/Tv">
+              TV프로그램
+            </Nav.Link>
+            <Nav.Link as={Link} to="/Book">
+              책
+            </Nav.Link>
           </Nav>
           <Nav className="justify-content-end">
             <Form inline>
@@ -30,12 +36,37 @@ function App() {
               />
               <Button variant="outline-success">Search</Button>
             </Form>
-            <Nav.Link>로그인</Nav.Link>
-            <Nav.Link>회원가입</Nav.Link>
+            <Nav.Link as={Link} to="/Login">
+              로그인
+            </Nav.Link>
+            <Nav.Link as={Link} to="/SignUp">
+              회원가입
+            </Nav.Link>
           </Nav>
         </Container>
       </Navbar>
-      <div>ㅎㅇ</div>
+      <Route exact path="/"></Route>
+
+      <Switch>
+        <Route path="/Movie">
+          <div>영화화면 </div>
+        </Route>
+        <Route path="/Tv">
+          <div>티비화면 </div>
+        </Route>
+        <Route path="/Book">
+          <div>책화면 </div>
+        </Route>
+        <Route path="/Search">
+          <div>검색화면 </div>
+        </Route>
+        <Route path="/Login">
+          <div>로그인화면 </div>
+        </Route>
+        <Route path="/SignUp">
+          <div>회원가입화면 </div>
+        </Route>
+      </Switch>
     </>
   );
 }
