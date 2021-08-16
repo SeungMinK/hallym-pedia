@@ -5,7 +5,7 @@ import axios from "axios";
 function Movie() {
   return (
     <>
-      <div>책 관련 페이지 입니다ㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏ</div>
+      <div>영화 관련 페이지 입니다ㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏ</div>
     </>
   );
 }
