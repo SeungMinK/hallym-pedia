@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useHistory, useParams } from "react-router-dom"; //useHistroy를 훅이라고 부름
 import axios from "axios";
 
-function Login() {
+function SignUp() {
   return (
     <>
       <form>
@@ -51,4 +51,4 @@ function Login() {
   );
 }
 
-export default Login;
+export default SignUp;
