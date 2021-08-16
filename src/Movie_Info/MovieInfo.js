@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import styles from '../Movie_Info/Star.css';
 // import StarRating from 'react-star-rating';
 
 // import {
@@ -12,11 +13,11 @@ const MovieInfo = () => {
     const [movietitle, setMovieTitle] = useState('');
     const [moviegenre, setMovieGenre] = useState('');
     const [moviewant, setMovieWant] = useState('');
-    const [star, setStar] = useState([false,false,false,false,false]);
+    const [star, setStar] = useState([false, false, false, false, false]);
 
     const starClick = (e, index) =>{
         e.preventDefault();
-        let click = [...star];
+        let click = [ ...star];
         for(let i = 0; i < 5; i++){
             if(i <= index) {
                 click[i] = true;
@@ -50,23 +51,23 @@ const MovieInfo = () => {
                             <p>평가하기</p>
                             <div>
                                 <FaStar
-                                    onClick = {(e) => click(e,0)}
+                                    onClick = {(e) => starClick(e,0)}
                                     className = {starnum[0] ? styles.clickedStar : null}
                                 />
                                 <FaStar
-                                    onClick = {(e) => click(e,1)}
+                                    onClick = {(e) => starClick(e,1)}
                                     className = {starnum[1] ? styles.clickedStar : null}
                                 />
                                 <FaStar
-                                    onClick = {(e) => click(e,2)}
+                                    onClick = {(e) => starClick(e,2)}
                                     className = {starnum[2] ? styles.clickedStar : null}
                                 />
                                 <FaStar
-                                    onClick = {(e) => click(e,3)}
+                                    onClick = {(e) => starClick(e,3)}
                                     className = {starnum[3] ? styles.clickedStar : null}
                                 />
                                 <StarRating
-                                    onClick = {(e) => click(e,4)}
+                                    onClick = {(e) => starClick(e,4)}
                                     className = {starnum[4] ? styles.clickedStar : null}
                                 />
                             </div>
