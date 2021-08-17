@@ -1,19 +1,19 @@
 .rating {
   
-    & svg {
+    svg {
         color: #c7c7c7;
         cursor: pointer;
     }
   
-    & div {
+    div {
         width: 120px;
     }
   
-    & div:hover svg {
+    div:hover svg {
         color: rgb(253, 223, 54);
     }
   
-    & svg:hover~svg {
+    svg:hover~svg {
         color: #fffbf2;
     }
-  }
+}
