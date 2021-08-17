@@ -47,8 +47,8 @@ const MovieInfo = () => {
                         <div>
                             <button onClick = {moviewant}>보고싶어요</button>
                         </div>
-                        <div >
-                            <p>평가하기</p>
+                        <div className={styles.rating}>
+                            <p>Rating</p>
                             <div>
                                 <FaStar
                                     onClick = {(e) => starClick(e,0)}
@@ -72,6 +72,7 @@ const MovieInfo = () => {
                                 />
                             </div>
                         </div>
+
                     </ul>
                 </div>
 
