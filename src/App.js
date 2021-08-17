@@ -39,7 +39,9 @@ function App() {
                 size="sm"
                 className="mr-sm-2"
               />
-              <Button variant="outline-success">Search</Button>
+              <Link to = "/MovieSearch">
+                <Button variant="outline-success">Search</Button>
+              </Link>
             </Form>
             <Nav.Link as={Link} to="/SignIn">
               로그인
