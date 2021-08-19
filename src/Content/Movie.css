@@ -1,0 +1,15 @@
+.Movie{
+    padding-top: 13%;
+    color: tomato;
+}
+.title{
+
+    text-align: left;
+    font-size: large;
+    font-weight: bolder;
+   
+}
+.box{
+    margin-top: 20px;
+    margin-left: 10px;
+}

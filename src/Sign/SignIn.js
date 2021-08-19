@@ -3,6 +3,11 @@ import { useHistory, useParams } from "react-router-dom"; //useHistroy를 훅이
 import axios from "axios";
 
 function SiginIn() {
+  let [user, userChange] = useState({
+    id: "",
+    pw: "",
+  });
+
   return (
     <>
       <form>
@@ -20,6 +25,7 @@ function SiginIn() {
         <div className="form-group">
           <label>Password</label>
           <input
+            name="pw"
             type="password"
             className="form-control"
             placeholder="Enter password"
@@ -39,7 +45,11 @@ function SiginIn() {
           </div>
         </div>
 
-        <button type="submit" className="btn btn-dark btn-lg btn-block">
+        <button
+          type="submit"
+          className="btn btn-dark btn-lg btn-block"
+          onClick={() => {}}
+        >
           Sign in
         </button>
         <p className="forgot-password text-right">
