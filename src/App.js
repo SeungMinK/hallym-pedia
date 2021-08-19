@@ -15,6 +15,10 @@ import Movie from "./Content/Movie";
 import Tv from "./Content/Tv";
 import Book from "./Content/Book";
 
+import MovieInfo from "./MovieInfo/MovieInfo";
+import MovieSearch from "./MovieSearch/MovieSearch";
+
+
 function App() {
   let [navCheck, navCheckChange] = useState(false);
 
