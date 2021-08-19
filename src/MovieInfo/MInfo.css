@@ -1,0 +1,177 @@
+:root{
+    /* Color  */
+    --darkgray-color : #282828;
+    --orange-color : #F59A23;
+    --yellow-color : #FAC700;
+    --skyblue-color : #58B1FF;
+    --lightpurple-color : #8A94FF;
+    --lightblue-color : #84E9F6;
+    --wantbtn-color :rgb(238, 15, 101);
+
+    /* Size */
+    --movietitle-padding: 8px;
+    --infoside-padding : 12px;
+    --star-size : 25px;
+    --movieline-margin : 470px;
+    --movieclass-margin : 300px;
+
+    /* font */
+    --font-title : 30px;
+    --font-large: 18px;
+    --font-lmedium : 16px;
+    --font-medium : 14px;
+    --font-small : 12px;
+}
+
+*{
+    padding : 0;
+    margin : 0;
+    box-sizing : border-box;
+}
+
+body{
+    width : 100%;
+    height : 100%;
+    margin : 0;
+}
+
+.MovieInfo_Box1{
+    width : 100%;
+    height : 395px;
+    background-color : var(--darkgray-color);
+    color : white;
+}
+
+/* box1부분 영화 화면 선명도 */
+.Movie_Image, #p_t{   
+    opacity : 0.5;
+}
+
+.MovieInfo_Box2{
+    position : relative;
+    height : 240px;
+    /* border : 3px solid yellow;  */
+}
+
+.MoviePoster{
+    position : absolute;
+    width : 170px;
+    height : 230px;
+    top : -40px;
+    margin : 0 var(--movieline-margin);
+    background-color: var(--lightpurple-color);
+    border : 2px solid black;
+}
+
+.Poster_TitleResult{
+    position : absolute;
+    top : -36px; 
+    left : 660px;
+    color : white;
+    background : none;
+    font-size : var(--font-small);
+    list-style : none;
+}
+
+.Movie{
+    position : absolute;
+    border: 2px solid red;
+    width : 40%;
+    height : 100%;
+    left : 660px;
+    margin : 0 auto;
+}
+
+.Movie > ul {
+
+    list-style: none;
+}
+
+#m_t{
+    font-size: var(--font-title);
+    font-weight : bold;
+    padding-top : var(--movietitle-padding);
+}
+
+#m_g{
+    font-size : var(--font-lmedium);
+    opacity : 0.65;
+}
+
+#m_a{
+    padding : var(--infoside-padding) 0;
+    font-weight: bold;
+}
+
+hr {
+    position : relative; 
+    height: 1px;
+    weidth : 200px;
+    border-top: 1px solid #ccc;
+}
+
+.btn_want{
+    position :absolute;
+    width : 250px;
+    height : 40px;
+    bottom : 25px;
+    padding-right : 50px;
+    color : white;
+    font-size: var(--font-large);
+    font-weight: bold;
+    background-color: var(--wantbtn-color);
+    border-radius: 5px;
+    border : none;
+}
+
+.updown{
+    position : absolute;
+    bottom : 25px;
+    left: 190px;
+    border: 0.01px solid var(--darkgray-color);
+    opacity: 0.1;
+    width : 0.01px;
+    height : 40px;
+}
+
+.addmovie{
+    position : absolute;
+    left: 195px;
+    bottom : 23px; 
+    padding : var(--infoside-padding);
+}
+
+.MovieInfo_Box3{
+    position :relative;
+    height: 1000px;
+    margin : 0 ;
+    padding : 0;
+    background-color: rgb(246, 246, 246);
+}
+
+
+
+.MovieInfo{
+    position : absolute;
+    display : block;
+    justify-content: space-between;
+    top : 35px;
+    margin : 0 var(--movieline-margin);
+    padding : 20px var(--infoside-padding);
+    background-color: white;
+    border-radius: 7px;
+    border: 1px solid #ccc;
+}
+
+#info_hr{
+    display : block;
+    margin : 0 5px;
+
+}
+
+#info_title{
+    font-size: var(--font-large);
+    font-weight : bold;
+}
+
+
