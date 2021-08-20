@@ -1,7 +1,8 @@
 import React from 'react';
-import '../MSearch.css';
+import './MSearch.css';
 
 const MovieSearch = () =>{
+
     return(
         <>
             <div className = "MovieSearch_box1">
@@ -21,7 +22,7 @@ const MovieSearch = () =>{
                     </div>
                     <div id = "img"><img alt="" src="" />movie title 4
                         <p>2004 · 한국</p>
-                        <p>영화</p>
+                        <p>영화</p> 
                     </div>
                     <div id = "img"><img alt="" src="" />movie title 5
                         <p>2005 · 한국</p>
@@ -34,7 +35,6 @@ const MovieSearch = () =>{
                 </div>
             </div>
             <hr />
-
             <div className = "MovieSearch_box2">영화</div>
             <div className = "MovieSearch_box3">TV 프로그램</div>
             <div className = "MovieSearch_box4">책</div>
