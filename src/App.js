@@ -31,14 +31,6 @@ function App() {
 
   const [search, setSearch] = useState("");
 
-<<<<<<< HEAD
-  const [search, setSearch] = useState('');
-
-
-
-
-=======
->>>>>>> 19fd67f298ad026c960ec33b456f79f1cb46f07a
   const Header = () => {
     if (navCheck) return null;
     return (
@@ -65,24 +57,9 @@ function App() {
                   size="sm"
                   className="mr-sm-2"
                 />
-<<<<<<< HEAD
-                <Nav.Link as = {Link} to = "/MovieSearch">
-                  <Button  variant="outline-success">Search
-                  </Button>
-                </Nav.Link>
-                {/* <Button
-                  variant="outline-success"
-                  onClick={() => {
-                    window.location.replace("/MovieSearch");
-                  }}
-                >
-                  Search
-                </Button> */}
-=======
                 <Nav.Link as={Link} to="/MovieSearch">
                   <Button variant="outline-success">Search</Button>
                 </Nav.Link>
->>>>>>> 19fd67f298ad026c960ec33b456f79f1cb46f07a
               </Form>
 
               <Nav.Link as={Link} to="/SignIn">
@@ -121,18 +98,6 @@ function App() {
           <Route path="/Search">
             <div>검색화면 </div>
           </Route>
-<<<<<<< HEAD
-
-          <Route path="/MovieInfo">
-            <MovieInfo></MovieInfo>
-          </Route>
-
-          <Route path="/MovieSearch">
-            <MovieSearch></MovieSearch>
-          </Route>
-
-=======
->>>>>>> 19fd67f298ad026c960ec33b456f79f1cb46f07a
           <Route path="/SignIn">
             <SignIn></SignIn>
           </Route>
