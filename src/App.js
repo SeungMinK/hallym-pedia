@@ -23,21 +23,25 @@ function App() {
 
   // // MOVIE_SEARCH 검색
   // const [search, setSearch] = useState("영화 제목,배우,감독을 검색해보세요");
-  
+
   // const onSearch = (history) =>{
   //   history.push("/MovieSearch")
   //   // alert('search');
   // };
 
+  const [search, setSearch] = useState("");
 
+<<<<<<< HEAD
   const [search, setSearch] = useState('');
 
 
 
 
+=======
+>>>>>>> 19fd67f298ad026c960ec33b456f79f1cb46f07a
   const Header = () => {
     if (navCheck) return null;
-    return ( 
+    return (
       <header>
         <Navbar bg="dark" variant="dark">
           <Container>
@@ -54,7 +58,6 @@ function App() {
               </Nav.Link>
             </Nav>
             <Nav className="justify-content-end">
-              
               <Form inline>
                 <FormControl
                   type="text"
@@ -62,6 +65,7 @@ function App() {
                   size="sm"
                   className="mr-sm-2"
                 />
+<<<<<<< HEAD
                 <Nav.Link as = {Link} to = "/MovieSearch">
                   <Button  variant="outline-success">Search
                   </Button>
@@ -74,6 +78,11 @@ function App() {
                 >
                   Search
                 </Button> */}
+=======
+                <Nav.Link as={Link} to="/MovieSearch">
+                  <Button variant="outline-success">Search</Button>
+                </Nav.Link>
+>>>>>>> 19fd67f298ad026c960ec33b456f79f1cb46f07a
               </Form>
 
               <Nav.Link as={Link} to="/SignIn">
@@ -99,7 +108,7 @@ function App() {
 
         <Switch>
           <Route path="/Movie">
-            <Link to ="./MovieInfo/MovieInfo.js">
+            <Link to="./MovieInfo/MovieInfo.js">
               <Movie></Movie>
             </Link>
           </Route>
@@ -112,6 +121,7 @@ function App() {
           <Route path="/Search">
             <div>검색화면 </div>
           </Route>
+<<<<<<< HEAD
 
           <Route path="/MovieInfo">
             <MovieInfo></MovieInfo>
@@ -121,6 +131,8 @@ function App() {
             <MovieSearch></MovieSearch>
           </Route>
 
+=======
+>>>>>>> 19fd67f298ad026c960ec33b456f79f1cb46f07a
           <Route path="/SignIn">
             <SignIn></SignIn>
           </Route>
