@@ -20,6 +20,7 @@ function Movie() {
     content를 state로 설정하여, 값이 바뀔떄마다 페이지가 바뀌게 설정
     */
   let [movieData, movieDataChange] = useState(data);
+<<<<<<< HEAD
 
   //movie_data 분리
   const [movietitle, setMovieTitle] = useState();
@@ -128,15 +129,29 @@ function Movie() {
         </table>
         <hr />
       </div>
+=======
+  return (
+    <>
+      {movieData.map((data, index) => {
+        return (
+          <div className="box">
+            <span className="title">{data.title}</span>
+            <table>
+              <tr>
+                <td>{data.rank_1}</td>
+                <td>{data.rank_2}</td>
+                <td>{data.rank_3}</td>
+                <td>{data.rank_4}</td>
+                <td>{data.rank_5}</td>
+              </tr>
+            </table>
+            <hr />
+          </div>
+        );
+      })}
+>>>>>>> ee31103190466c14347a9583a82b595e009423ef
     </>
   );
-}
-
-function dataCard(props) {
-  <div className="col-md-4">
-    <h4>{props.movie.title} </h4>
-    <h4>{props.movie.rank_1}</h4>
-  </div>;
 }
 
 export default Movie;

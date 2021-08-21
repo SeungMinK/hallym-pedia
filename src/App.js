@@ -16,11 +16,11 @@ import Tv from "./Content/Tv";
 import Book from "./Content/Book";
 
 import MovieInfo from "./MovieInfo/MovieInfo";
-import MovieSearch from "./MovieSearch/MovieSearch";
-
+import MovieSearch from "./MovieSearch/MovieSearch.js";
 
 function App() {
   let [navCheck, navCheckChange] = useState(false);
+<<<<<<< HEAD
 
   // // MOVIE_SEARCH 검색
   // const [search, setSearch] = useState("영화 제목,배우,감독을 검색해보세요");
@@ -36,6 +36,8 @@ function App() {
 
 
 
+=======
+>>>>>>> ee31103190466c14347a9583a82b595e009423ef
   const Header = () => {
     if (navCheck) return null;
     return ( 
@@ -63,10 +65,21 @@ function App() {
                   size="sm"
                   className="mr-sm-2"
                 />
+<<<<<<< HEAD
                 <Nav.Link as = {Link} to = "/MovieSearch">
                   <Button  variant="outline-success">Search
                   </Button>
                 </Nav.Link>
+=======
+                <Button
+                  variant="outline-success"
+                  onClick={() => {
+                    window.location.replace("/MovieSearch");
+                  }}
+                >
+                  Search
+                </Button>
+>>>>>>> ee31103190466c14347a9583a82b595e009423ef
               </Form>
 
               <Nav.Link as={Link} to="/SignIn">
@@ -105,6 +118,18 @@ function App() {
           <Route path="/Search">
             <div>검색화면 </div>
           </Route>
+<<<<<<< HEAD
+=======
+
+          <Route path="/MovieInfo">
+            <MovieInfo></MovieInfo>
+          </Route>
+
+          <Route path="/MovieSearch">
+            <MovieSearch></MovieSearch>
+          </Route>
+
+>>>>>>> ee31103190466c14347a9583a82b595e009423ef
           <Route path="/SignIn">
             <SignIn></SignIn>
           </Route>
