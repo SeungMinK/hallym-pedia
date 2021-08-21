@@ -12,106 +12,25 @@ function Movie() {
   let [movieData, movieDataChange] = useState(data);
   return (
     <>
-      <div className="box">
-        <span className="title">{movieData[0].title}</span>
-        <table>
-          <tr>
-            <td>{movieData[0].rank_1}</td>
-            <td>{movieData[0].rank_2}</td>
-            <td>{movieData[0].rank_3}</td>
-            <td>{movieData[0].rank_4}</td>
-            <td>{movieData[0].rank_5}</td>
-          </tr>
-        </table>
-        <hr />
-      </div>
-      <div className="box">
-        <span className="title">{movieData[1].title}</span>
-        <table>
-          <tr>
-            <td>{movieData[1].rank_1}</td>
-            <td>{movieData[1].rank_2}</td>
-            <td>{movieData[1].rank_3}</td>
-            <td>{movieData[1].rank_4}</td>
-            <td>{movieData[1].rank_5}</td>
-          </tr>
-        </table>
-        <hr />
-      </div>
-      <div className="box">
-        <span className="title">{movieData[2].title}</span>
-        <table>
-          <tr>
-            <td>{movieData[2].rank_1}</td>
-            <td>{movieData[2].rank_2}</td>
-            <td>{movieData[2].rank_3}</td>
-            <td>{movieData[2].rank_4}</td>
-            <td>{movieData[2].rank_5}</td>
-          </tr>
-        </table>
-        <hr />
-      </div>
-      <div className="box">
-        <span className="title">{movieData[3].title}</span>
-        <table>
-          <tr>
-            <td>{movieData[3].rank_1}</td>
-            <td>{movieData[3].rank_2}</td>
-            <td>{movieData[3].rank_3}</td>
-            <td>{movieData[3].rank_4}</td>
-            <td>{movieData[3].rank_5}</td>
-          </tr>
-        </table>
-        <hr />
-      </div>
-      <div className="box">
-        <span className="title">{movieData[4].title}</span>
-        <table>
-          <tr>
-            <td>{movieData[4].rank_1}</td>
-            <td>{movieData[4].rank_2}</td>
-            <td>{movieData[4].rank_3}</td>
-            <td>{movieData[4].rank_4}</td>
-            <td>{movieData[4].rank_5}</td>
-          </tr>
-        </table>
-        <hr />
-      </div>
-      <div className="box">
-        <span className="title">{movieData[5].title}</span>
-        <table>
-          <tr>
-            <td>{movieData[5].rank_1}</td>
-            <td>{movieData[5].rank_2}</td>
-            <td>{movieData[5].rank_3}</td>
-            <td>{movieData[5].rank_4}</td>
-            <td>{movieData[5].rank_5}</td>
-          </tr>
-        </table>
-        <hr />
-      </div>
-      <div className="box">
-        <span className="title">{movieData[6].title}</span>
-        <table>
-          <tr>
-            <td>{movieData[6].rank_1}</td>
-            <td>{movieData[6].rank_2}</td>
-            <td>{movieData[6].rank_3}</td>
-            <td>{movieData[6].rank_4}</td>
-            <td>{movieData[6].rank_5}</td>
-          </tr>
-        </table>
-        <hr />
-      </div>
+      {movieData.map((data, index) => {
+        return (
+          <div className="box">
+            <span className="title">{data.title}</span>
+            <table>
+              <tr>
+                <td>{data.rank_1}</td>
+                <td>{data.rank_2}</td>
+                <td>{data.rank_3}</td>
+                <td>{data.rank_4}</td>
+                <td>{data.rank_5}</td>
+              </tr>
+            </table>
+            <hr />
+          </div>
+        );
+      })}
     </>
   );
-}
-
-function dataCard(props) {
-  <div className="col-md-4">
-    <h4>{props.movie.title} </h4>
-    <h4>{props.movie.rank_1}</h4>
-  </div>;
 }
 
 export default Movie;
