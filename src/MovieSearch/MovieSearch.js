@@ -1,5 +1,5 @@
 import React from "react";
-
+import "./MSearch.css";
 import { Link, Route, Switch } from "react-router-dom";
 
 const MovieSearch = () => {

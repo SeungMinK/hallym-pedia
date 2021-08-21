@@ -85,9 +85,7 @@ function App() {
 
         <Switch>
           <Route path="/Movie">
-            <Link to="./MovieInfo/MovieInfo.js">
-              <Movie></Movie>
-            </Link>
+            <Movie></Movie>
           </Route>
           <Route path="/Tv">
             <Tv></Tv>
@@ -98,6 +96,15 @@ function App() {
           <Route path="/Search">
             <div>검색화면 </div>
           </Route>
+
+          <Route path="/MovieInfo">
+            <MovieInfo></MovieInfo>
+          </Route>
+
+          <Route path="/MovieSearch">
+            <MovieSearch></MovieSearch>
+          </Route>
+
           <Route path="/SignIn">
             <SignIn></SignIn>
           </Route>

@@ -1,5 +1,5 @@
 import React from "react";
-
+import "./MInfo.css";
 const MovieInfo = () => {
   // const [movietitle, setMovieTitle] = useState('');
   // const [moviegenre, setMovieGenre] = useState('');
