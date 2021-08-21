@@ -16,12 +16,10 @@ import Tv from "./Content/Tv";
 import Book from "./Content/Book";
 
 import MovieInfo from "./MovieInfo/MovieInfo";
-import MovieSearch from "./MovieSearch/MovieSearch";
-
+import MovieSearch from "./MovieSearch/MovieSearch.js";
 
 function App() {
   let [navCheck, navCheckChange] = useState(false);
-
   const Header = () => {
     if (navCheck) return null;
     return (
@@ -48,7 +46,14 @@ function App() {
                   size="sm"
                   className="mr-sm-2"
                 />
-                <Button variant="outline-success">Search</Button>
+                <Button
+                  variant="outline-success"
+                  onClick={() => {
+                    window.location.replace("/MovieSearch");
+                  }}
+                >
+                  Search
+                </Button>
               </Form>
 
               <Nav.Link as={Link} to="/SignIn">
@@ -84,6 +89,14 @@ function App() {
           </Route>
           <Route path="/Search">
             <div>검색화면 </div>
+          </Route>
+
+          <Route path="/MovieInfo">
+            <MovieInfo></MovieInfo>
+          </Route>
+
+          <Route path="/MovieSearch">
+            <MovieSearch></MovieSearch>
           </Route>
 
           <Route path="/SignIn">

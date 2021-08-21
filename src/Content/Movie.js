@@ -10,7 +10,6 @@ function Movie() {
     content를 state로 설정하여, 값이 바뀔떄마다 페이지가 바뀌게 설정
     */
   let [movieData, movieDataChange] = useState(data);
-
   return (
     <>
       <div className="box">
