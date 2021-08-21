@@ -22,9 +22,23 @@ import MovieSearch from "./MovieSearch/MovieSearch";
 function App() {
   let [navCheck, navCheckChange] = useState(false);
 
+  // // MOVIE_SEARCH 검색
+  // const [search, setSearch] = useState("영화 제목,배우,감독을 검색해보세요");
+  
+  // const onSearch = (history) =>{
+  //   history.push("/MovieSearch")
+  //   // alert('search');
+  // };
+
+
+  const [search, setSearch] = useState('');
+
+
+
+
   const Header = () => {
     if (navCheck) return null;
-    return (
+    return ( 
       <header>
         <Navbar bg="dark" variant="dark">
           <Container>
@@ -41,6 +55,7 @@ function App() {
               </Nav.Link>
             </Nav>
             <Nav className="justify-content-end">
+              
               <Form inline>
                 <FormControl
                   type="text"
@@ -48,7 +63,10 @@ function App() {
                   size="sm"
                   className="mr-sm-2"
                 />
-                <Button variant="outline-success">Search</Button>
+                <Nav.Link as = {Link} to = "/MovieSearch">
+                  <Button  variant="outline-success">Search
+                  </Button>
+                </Nav.Link>
               </Form>
 
               <Nav.Link as={Link} to="/SignIn">
@@ -74,7 +92,9 @@ function App() {
 
         <Switch>
           <Route path="/Movie">
-            <Movie></Movie>
+            <Link to ="./MovieInfo/MovieInfo.js">
+              <Movie></Movie>
+            </Link>
           </Route>
           <Route path="/Tv">
             <Tv></Tv>
@@ -85,7 +105,6 @@ function App() {
           <Route path="/Search">
             <div>검색화면 </div>
           </Route>
-
           <Route path="/SignIn">
             <SignIn></SignIn>
           </Route>

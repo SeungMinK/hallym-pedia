@@ -1,17 +1,23 @@
 import React from 'react';
 import './MSearch.css';
 
+import { 
+    Link, Route, Switch 
+} from "react-router-dom";
+
+
 const MovieSearch = () =>{
 
     return(
         <>
+
             <div className = "MovieSearch_box1">
             <div className = "movie_high_search_title">상위 검색 결과</div>
                 <div className = "movie_high_search_name">
                     <div id = "img"><img alt="" src="" />movie title 1
                         <p>2001 · 한국</p>
                         <p>영화</p>
-                    </div>
+                    </div>                
                     <div id = "img"><img alt="" src="" />movie title 2
                         <p>2002 · 한국</p>
                         <p>영화</p>
