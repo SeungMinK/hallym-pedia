@@ -12,6 +12,7 @@ function Movie() {
   let [movieData, movieDataChange] = useState(data);
   return (
     <>
+      <span>테스트</span>
       {movieData.map((data, index) => {
         return (
           <div className="box">
