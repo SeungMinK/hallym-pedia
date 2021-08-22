@@ -8,14 +8,16 @@ import Tv from "./Content/Tv";
 import Book from "./Content/Book";
 
 import MovieInfo from "./MovieInfo/MovieInfo";
-import MovieSearch from "./MovieSearch/MovieSearch.js";
+import MovieSearch from "./MovieSearch/MovieSearch";
 
 import Header from "./headerNav";
 
 function App() {
+  let [searchData, setSearchData] = useState("싱크홀");
+
   return (
     <>
-      <Header></Header>
+      <Header search={searchData}></Header>
       <section>
         <Route exact path="/">
           <Movie></Movie>
@@ -40,7 +42,7 @@ function App() {
           </Route>
 
           <Route path="/MovieSearch">
-            <MovieSearch></MovieSearch>
+            <MovieSearch search={searchData}></MovieSearch>
           </Route>
 
           <Route path="/SignIn">

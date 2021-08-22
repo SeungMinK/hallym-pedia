@@ -2,11 +2,17 @@ import React from "react";
 import "./MSearch.css";
 import { Link, Route, Switch } from "react-router-dom";
 
-const MovieSearch = () => {
+const MovieSearch = (prop) => {
   return (
     <>
       <div className="MovieSearch_box1">
-        <div className="movie_high_search_title">상위 검색 결과</div>
+        <div className="movie_high_search_title">
+          <h4>
+            ㅇ{prop.search}
+            {console.log("props값 : " + prop.search)}
+          </h4>
+          상위 검색 결과
+        </div>
         <div className="movie_high_search_name">
           <div id="img">
             <img alt="" src="" />
