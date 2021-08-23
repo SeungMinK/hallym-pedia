@@ -100,7 +100,7 @@ function App() {
             <div>검색화면 </div>
           </Route>
 
-          <Route path="/MovieInfo">
+          <Route path="/MovieInfo:title">
             <MovieInfo></MovieInfo>
           </Route>
 
