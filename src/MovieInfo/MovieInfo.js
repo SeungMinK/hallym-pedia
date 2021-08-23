@@ -47,7 +47,7 @@ const MovieInfo = (props) => {
 
       <div className="MovieInfo_Box2">
         <div className="MoviePoster">
-          <h1>값 넘어 왔어요~~!! : {title}</h1>
+          <h1>값 넘어 왔어요~~!!{title}</h1>
           영화 포스터 이미지
           {/* <img src = "" /> */}
         </div>

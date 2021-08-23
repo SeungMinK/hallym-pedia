@@ -58,11 +58,11 @@ function Movie() {
                   <ul>
                     {/* <a href = "/MovieInfo" onClick = {sendData}>{data.rank_1}</a> */}
 
-                    <a href={`/MovieInfo:${data.rank_1}`}>{data.rank_1}</a>
-                    <a href={`/MovieInfo:${data.rank_2}`}>{data.rank_2}</a>
-                    <a href={`/MovieInfo:${data.rank_3}`}>{data.rank_3}</a>
-                    <a href={`/MovieInfo:${data.rank_4}`}>{data.rank_4}</a>
-                    <a href={`/MovieInfo:${data.rank_5}`}>{data.rank_5}</a>
+                    <a href={`/MovieInfo/${data.rank_1}`}>{data.rank_1}</a>
+                    <a href={`/MovieInfo/${data.rank_2}`}>{data.rank_2}</a>
+                    <a href={`/MovieInfo/${data.rank_3}`}>{data.rank_3}</a>
+                    <a href={`/MovieInfo/${data.rank_4}`}>{data.rank_4}</a>
+                    <a href={`/MovieInfo/${data.rank_5}`}>{data.rank_5}</a>
 
                     {/* <Switch>
                     <Route exact path = "/MovieInfo" > {renderMovies} </Route>
