@@ -13,11 +13,6 @@ import "./Movie.css";
 import data from "./dataMoive";
 import MovieInfo from "../MovieInfo/MovieInfo";
 
-<<<<<<< HEAD
-import 인질 from "../MovieInfoData/m_02/인질";
-
-=======
->>>>>>> eb707bb577f987809adf4f99455fb5beea164833
 function Movie() {
   /*
     ajax요청을 통해, content가져오기
@@ -51,12 +46,6 @@ function Movie() {
   //       );
   // });
 
-<<<<<<< HEAD
-
-
-  
-=======
->>>>>>> eb707bb577f987809adf4f99455fb5beea164833
   return (
     <>
       {movieData.map((data, index) => {

@@ -36,15 +36,6 @@ const MovieInfo = (props) => {
   //   );
   // })
 
-<<<<<<< HEAD
-
-  //인질 data 가져오기
-  
-
-
-
-=======
->>>>>>> eb707bb577f987809adf4f99455fb5beea164833
   return (
     <>
       <div className="MovieInfo_Box1">
@@ -93,8 +84,10 @@ const MovieInfo = (props) => {
           <div>
             {/* dataMovie 데이터 index에 따라 정보 받기..? */}
             {/* <div>{props.data}</div> */}
-            <div>{dataMovie[0].rank_1} </div>
-            <div>{dataMovie[2].rank_2} </div>
+
+            {title}
+            {/* <div>{dataMovie[0].rank_1} </div>
+            <div>{dataMovie[2].rank_2} </div> */}
             {/* <MData[0].rank_1 /> */}
             <br />
             2020 · 한국 · 드라마 <br />
