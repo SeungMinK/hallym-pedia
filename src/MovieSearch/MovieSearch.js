@@ -1,13 +1,14 @@
 import React from "react";
 import "./MSearch.css";
-import { Link, Route, Switch } from "react-router-dom";
+import { useParams } from "react-router-dom";
 
-const MovieSearch = (props) => {
+const MovieSearch = () => {
+  let { searchData } = useParams();
   return (
     <>
       <div className="MovieSearch_box1">
         <div className="movie_high_search_title">
-          '{props.SearchData}' 상위 검색 결과
+          '{searchData}' 상위 검색 결과
         </div>
         <div className="movie_high_search_name">
           <div id="img">
