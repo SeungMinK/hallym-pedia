@@ -1,19 +1,20 @@
 import React, { useState } from "react";
 import dataMovie from "../Content/dataMoive";
+import { useParams } from "react-router-dom";
 import Movie from "../Content/Movie";
 import "./MInfo.css";
 
 // import dataMovie from "../Content/dataMoive";
 
 const MovieInfo = (props) => {
+  let { title } = useParams();
   // const [movietitle, setMovieTitle] = useState('');
   // const [moviegenre, setMovieGenre] = useState('');
   // const [moviewant, setMovieWant] = useState('');
   // const [star, setStar] = useState([false, false, false, false, false]);
 
-
   //시도1
-  // const filterid = (props) => dataMovie.filter(title => 
+  // const filterid = (props) => dataMovie.filter(title =>
   //   title.includes('인질').map(filterTitle =>(
   //     <div>
   //       <filterTitle></filterTitle>
@@ -35,7 +36,6 @@ const MovieInfo = (props) => {
   //   );
   // })
 
-
   return (
     <>
       <div className="MovieInfo_Box1">
@@ -47,7 +47,7 @@ const MovieInfo = (props) => {
 
       <div className="MovieInfo_Box2">
         <div className="MoviePoster">
-          {" "}
+          <h1>값 넘어 왔어요~~!! : {title}</h1>
           영화 포스터 이미지
           {/* <img src = "" /> */}
         </div>
@@ -82,16 +82,11 @@ const MovieInfo = (props) => {
         <div class="MovieInfo">
           <div id="info_title">기본 정보</div>
           <div>
-            
             {/* dataMovie 데이터 index에 따라 정보 받기..? */}
-     
             {/* <div>{props.data}</div> */}
-
             <div>{dataMovie[0].rank_1} </div>
             <div>{dataMovie[2].rank_2} </div>
-
             {/* <MData[0].rank_1 /> */}
-
             <br />
             2020 · 한국 · 드라마 <br />
             1시간 53분 · 12세 <br />
@@ -107,7 +102,7 @@ const MovieInfo = (props) => {
             나갈 수 있을까요?”
           </div>
           <br />
-          
+
           <hr id="info_hr" />
           <div>출연/제작</div>
           <hr id="info_hr" />
