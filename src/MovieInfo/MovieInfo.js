@@ -36,6 +36,11 @@ const MovieInfo = (props) => {
   // })
 
 
+  //인질 data 가져오기
+  
+
+
+
   return (
     <>
       <div className="MovieInfo_Box1">

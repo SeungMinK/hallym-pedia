@@ -13,6 +13,7 @@ import "./Movie.css";
 import data from "./dataMoive";
 import MovieInfo from "../MovieInfo/MovieInfo";
 
+import 인질 from "../MovieInfoData/m_02/인질";
 
 function Movie() {
   /*
@@ -53,6 +54,8 @@ function Movie() {
   // });
 
 
+
+  
   return (
     <>
       
