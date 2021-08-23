@@ -45,7 +45,7 @@ function Movie() {
   // });
 
 
-
+  //5번
   // const sendData = data.map((item) => {
   //       return(
   //         <data data = {item} />
