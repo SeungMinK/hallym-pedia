@@ -84,7 +84,6 @@ const MovieInfo = (props) => {
           <div>
             {/* dataMovie 데이터 index에 따라 정보 받기..? */}
             {/* <div>{props.data}</div> */}
-
             {title}
             {/* <div>{dataMovie[0].rank_1} </div>
             <div>{dataMovie[2].rank_2} </div> */}

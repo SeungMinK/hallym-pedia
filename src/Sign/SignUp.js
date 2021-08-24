@@ -42,10 +42,12 @@ function SignUp() {
         }
       });
     */
-    // axios.post('/api/users/login', body)
-    // .then(response => {
+    /*
+     axios.post('/firebaseq32113;393939/user', body)
+     .then(response => {
 
-    // })
+     })
+     */
   };
 
   return (
