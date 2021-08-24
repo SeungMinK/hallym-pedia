@@ -4,40 +4,10 @@ import { useParams } from "react-router-dom";
 import Movie from "../Content/Movie";
 import "./MInfo.css";
 
-import MCommment from './MComment'
 
-
-// import dataMovie from "../Content/dataMoive";
 
 const MovieInfo = (props) => {
   let { title } = useParams();
-  // const [movietitle, setMovieTitle] = useState('');
-  // const [moviegenre, setMovieGenre] = useState('');
-  // const [moviewant, setMovieWant] = useState('');
-  // const [star, setStar] = useState([false, false, false, false, false]);
-
-  //시도1
-  // const filterid = (props) => dataMovie.filter(title =>
-  //   title.includes('인질').map(filterTitle =>(
-  //     <div>
-  //       <filterTitle></filterTitle>
-  //     </div>
-  //   ))
-  // )
-  //시도2
-  // const MTitle = props.movie.map((rank) => {
-  //   return (
-  //     {props.rank.rank_1}
-  //   );
-  // });
-
-  //시도5
-  // const Mdata = dataMovie.map((data, index) => {
-  //   return(
-  //     <div> {data[index]} </div>
-  //     // <div> {data[index].rank_(index)} </div>
-  //   );
-  // })
 
   return (
     <>
@@ -49,35 +19,36 @@ const MovieInfo = (props) => {
       </div>
 
       <div className="MovieInfo_Box2">
-        <div className="MoviePoster">
-          <h1>값 넘어 왔어요~~!!{title}</h1>
-          영화 포스터 이미지
-          {/* <img src = "" /> */}
-        </div>
-        <div>
-          <li className="Poster_TitleResult">
-            <span id="p_t">예매 순위 · </span>
-            <span id="p_r">1위(33%)</span>&nbsp;&nbsp;&nbsp;
-            <span id="p_t">개봉 · </span>
-            <span id="p_r">3일째</span>&nbsp;&nbsp;&nbsp;
-            <span id="p_t">누적 관객 · </span>
-            <span id="p_r">27만명</span>
-          </li>
-          <div className="Movie">
-            <ul>
-              <li id="m_t">싱크홀</li>
-              <li id="m_g">
-                2020 &nbsp;· &nbsp;드라마/재난 &nbsp;·&nbsp; 한국
-              </li>
-            </ul>
-            <hr />
-            <div id="m_a">평균 💛2.4 (945명)</div>
-            <hr />
-            <div>
-              <button class="btn_want">+ &nbsp;보고싶어요 </button>
+        <div className = "MovieInfo_Box2_1">
+          <div className="MoviePoster" >
+            <img className = "image" src = "/movieImg/0/0_1.png"></img>
+          </div>
+          <div>
+            <li className="Poster_TitleResult">
+              <span id="p_t">예매 순위 · </span>
+              <span id="p_r">1위(33%)</span>&nbsp;&nbsp;&nbsp;
+              <span id="p_t">개봉 · </span>
+              <span id="p_r">3일째</span>&nbsp;&nbsp;&nbsp;
+              <span id="p_t">누적 관객 · </span>
+              <span id="p_r">27만명</span>
+            </li>
+            <div className="Movie">
+              <ul>
+                <li id="m_t">싱크홀</li>
+                <li id="m_g">
+                  2020 &nbsp;· &nbsp;드라마/재난 &nbsp;·&nbsp; 한국
+                </li>
+                
+              </ul>
+              
+              <div id="m_a"><hr />평균 💛2.4 (945명)<hr /></div>
+              
+              <div>
+                <button class="btn_want">+ &nbsp;보고싶어요 </button>
+              </div>
+              <div class="updown"></div>
+              <div class="addmovie">💛</div>
             </div>
-            <div class="updown"></div>
-            <div class="addmovie">💛</div>
           </div>
         </div>
       </div>
@@ -112,7 +83,6 @@ const MovieInfo = (props) => {
           <hr id="info_hr" />
           <div>비슷한 작품</div>
         </div>
-        <MCommment />
       </div>
     </>
   );
