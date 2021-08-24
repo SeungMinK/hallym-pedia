@@ -22,7 +22,13 @@ function HeaderNav() {
   return (
     <>
       <header>
-        <Navbar bg="dark" variant="dark">
+        <Navbar
+          variant="dark"
+          style={{
+            background: "#282828",
+            border: "#ffffff",
+          }}
+        >
           <Container>
             <Navbar.Brand href="#home">Hallym-Pedia</Navbar.Brand>
             <Nav className="justify-content-start">
@@ -36,7 +42,7 @@ function HeaderNav() {
                 책
               </Nav.Link>
             </Nav>
-            <Nav className="justify-content-end">
+            <Nav className="justify-content-between">
               <Form inline>
                 <FormControl
                   type="text"
@@ -51,6 +57,10 @@ function HeaderNav() {
                     variant="outline-success"
                     type="submit"
                     onClick={onSubmitHandler}
+                    style={{
+                      background: "#8A94FF",
+                      border: "#ffffff",
+                    }}
                   >
                     Search
                   </Button>
