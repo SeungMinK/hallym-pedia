@@ -4,6 +4,9 @@ import { useParams } from "react-router-dom";
 import Movie from "../Content/Movie";
 import "./MInfo.css";
 
+import MCommment from './MComment'
+
+
 // import dataMovie from "../Content/dataMoive";
 
 const MovieInfo = (props) => {
