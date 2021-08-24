@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useHistory, useParams } from "react-router-dom"; //useHistroy를 훅이라고 부름
 import axios from "axios";
+import "./SignUp.css";
 
 function SignUp() {
   const [Name, setName] = useState("");
@@ -52,7 +53,7 @@ function SignUp() {
 
   return (
     <>
-      <form onSubmit={onSubmitHandler}>
+      <form className="LoginBox" onSubmit={onSubmitHandler}>
         <h3>Register</h3>
 
         <div className="form-group">

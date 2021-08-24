@@ -5,7 +5,7 @@ import axios from "axios";
 function Book() {
   return (
     <>
-      <div>책 관련 페이지 입니다ㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏ</div>
+      <div>책 관련 페이지 입니다</div>
     </>
   );
 }
