@@ -112,6 +112,7 @@ const MovieInfo = (props) => {
           <hr id="info_hr" />
           <div>비슷한 작품</div>
         </div>
+        <MCommment />
       </div>
     </>
   );

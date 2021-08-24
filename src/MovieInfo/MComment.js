@@ -2,9 +2,9 @@ import { tsConstructorType } from '@babel/types';
 import { render } from '@testing-library/react';
 import React from 'react';
 
-function MComment () {
+class MComment extends React.Component {
     render(){
-        tsConstructorType(){
+        constructor() {
             super();
             this.state = {
                 newReply : "",
@@ -12,8 +12,24 @@ function MComment () {
             };
         }
 
-        // textChange
+        textChange = (3) => {
+            this.setState({ newReply : e.target.value });
+        }
 
+        buttonClick = () =>{
+            let arr = this.state.replies;
+            arr = arr.concat({ text : this.state.newReply});
+
+            this.setState({ newReply : "" , replies : arr});
+        }
+
+        enterClick (e) = >{
+            if(e.key ==="Enter"){
+                this.buttonClick;
+                e.target.value = "";
+            };
+            
+        }
     }
     return (
         <>
