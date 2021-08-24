@@ -1,8 +1,11 @@
 import axios from "axios";
 import React, { useState } from "react";
-let email = "";
-let password = "";
+import "./SignIn.css";
+
 function SiginIn(props) {
+  let email = "";
+  let password = "";
+
   const [user, setUser] = useState({
     email: "",
     password: "",
@@ -57,10 +60,10 @@ function SiginIn(props) {
   };
 
   return (
-    <form onSubmit={onSubmitHandler}>
+    <form className="LoginBox" onSubmit={onSubmitHandler}>
       <h3>Log in</h3>
 
-      <div className="form-group">
+      <div className="form-group-email">
         <label>Email</label>
         <input
           type="email"

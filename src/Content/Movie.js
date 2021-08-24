@@ -50,7 +50,7 @@ function Movie() {
     <>
       {movieData.map((data, index) => {
         return (
-          <div className="box">
+          <div className="MoiveBox">
             <Router>
               <dataTitle>
                 <span className="title">{data.title}</span>
