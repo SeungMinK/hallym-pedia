@@ -58,11 +58,70 @@ function Movie() {
                   <ul>
                     {/* <a href = "/MovieInfo" onClick = {sendData}>{data.rank_1}</a> */}
 
-                    <a href={`/MovieInfo/${data.rank_1}`}>{data.rank_1}</a>
-                    <a href={`/MovieInfo/${data.rank_2}`}>{data.rank_2}</a>
-                    <a href={`/MovieInfo/${data.rank_3}`}>{data.rank_3}</a>
-                    <a href={`/MovieInfo/${data.rank_4}`}>{data.rank_4}</a>
-                    <a href={`/MovieInfo/${data.rank_5}`}>{data.rank_5}</a>
+                    <div>
+                      <a href={`/MovieInfo/${data.rank_1}`}>
+                        <img
+                          src={
+                            process.env.PUBLIC_URL +
+                            `/movieImg/${index}/${index}_${1}.png`
+                          }
+                          alt="copy url"
+                        />{" "}
+                      </a>
+                      <p>{data.rank_1}</p>
+                    </div>
+
+                    <div>
+                      <a href={`/MovieInfo/${data.rank_2}`}>
+                        <img
+                          src={
+                            process.env.PUBLIC_URL +
+                            `/movieImg/${index}/${index}_${2}.png`
+                          }
+                          alt="copy url"
+                        />{" "}
+                      </a>
+                      <p>{data.rank_2}</p>
+                    </div>
+
+                    <div>
+                      <a href={`/MovieInfo/${data.rank_3}`}>
+                        <img
+                          src={
+                            process.env.PUBLIC_URL +
+                            `/movieImg/${index}/${index}_${3}.png`
+                          }
+                          alt="copy url"
+                        />{" "}
+                      </a>
+                      <p>{data.rank_3}</p>
+                    </div>
+
+                    <div>
+                      <a href={`/MovieInfo/${data.rank_4}`}>
+                        <img
+                          src={
+                            process.env.PUBLIC_URL +
+                            `/movieImg/${index}/${index}_${4}.png`
+                          }
+                          alt="copy url"
+                        />{" "}
+                      </a>
+                      <p>{data.rank_4}</p>
+                    </div>
+
+                    <div>
+                      <a href={`/MovieInfo/${data.rank_5}`}>
+                        <img
+                          src={
+                            process.env.PUBLIC_URL +
+                            `/movieImg/${index}/${index}_${5}.png`
+                          }
+                          alt="copy url"
+                        />{" "}
+                      </a>
+                      <p>{data.rank_5}</p>
+                    </div>
 
                     {/* <Switch>
                     <Route exact path = "/MovieInfo" > {renderMovies} </Route>
