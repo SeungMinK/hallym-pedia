@@ -195,4 +195,54 @@ body{
 #info_title{
     font-size: var(--font-large);
     font-weight : bold;
+    padding : 10px;
+}
+
+#info_movie{
+    /* border : 1px solid red; */
+    padding : 10px 10px;
+}
+
+
+
+/* 댓글 달기 */
+.comment_box{
+    display : flex;
+    flex-direction : column;
+    overflow: auto;
+    width : 90%;
+    height : 300px;
+    padding : 10px;
+    margin : 10px; 
+    border : 1px solid black;
+    list-style: none;
+}
+
+.comment_box > li {
+    
+}
+
+.publish {
+    margin-bottom : 30px;
+}
+
+.publish input {
+    padding : 20px;
+    margin : 10px;
+    width : 90%;
+    border : 1px solid grey;
+    border-radius: 5px;
+}
+
+.publish button {
+    margin-left : 10px;
+    width : 50px;
+    border-radius: 5px;
+}
+
+
+.comment_box > .list > hr{
+    margin-left : 0;
+    margin-right : 0;
+
 }
