@@ -9,6 +9,28 @@ import "./MInfo.css";
 const MovieInfo = (props) => {
   let { title } = useParams();
 
+
+  let [commnet, Setcommnet] = useState(['너무 재미있어요', ' 우왕 너무 재미있어요', '너무 재미없어요ㅠ']);
+  
+  let [user, setUser] = useState(['user1', 'user2', 'user3']);
+  let [write, setWrite] = useState('');
+
+
+
+  // let [data, setData] = useState([]);
+  // let [write, setWrite] = useState('');
+
+
+
+
+
+  function M_Comment (){
+    var arrayCopy = [...commnet];
+    arrayCopy.unshift(write);
+    Setcommnet( arrayCopy ); 
+  }
+
+
   return (
     <>
       <div className="MovieInfo_Box1">
@@ -54,14 +76,13 @@ const MovieInfo = (props) => {
       </div>
       <div className="MovieInfo_Box3">
         <div class="MovieInfo">
+          
+          {/* 기본정보 */}
           <div id="info_title">기본 정보</div>
-          <div>
-            {/* dataMovie 데이터 index에 따라 정보 받기..? */}
-            {/* <div>{props.data}</div> */}
+          <div id = "info_movie">
+            
             {title}
-            {/* <div>{dataMovie[0].rank_1} </div>
-            <div>{dataMovie[2].rank_2} </div> */}
-            {/* <MData[0].rank_1 /> */}
+            
             <br />
             2020 · 한국 · 드라마 <br />
             1시간 53분 · 12세 <br />
@@ -77,11 +98,43 @@ const MovieInfo = (props) => {
             나갈 수 있을까요?”
           </div>
           <br />
+          <hr id="info_hr" />
+          
+          {/* 출연/제작 */}
+          <div id="info_title">출연/제작</div>
+          <hr id="info_hr" />
+          
+          {/* 비슷한 작품 */}
+          <div id="info_title">비슷한 작품</div>
+          <hr id="info_hr" />
 
-          <hr id="info_hr" />
-          <div>출연/제작</div>
-          <hr id="info_hr" />
-          <div>비슷한 작품</div>
+
+
+         {/* 댓글 달기 기능 추가 */}
+        <div id="info_title">댓글 달기</div>
+        <div className = "comment_box">
+                    
+            {
+              commnet.map(function(comm, i){
+                return(
+                  <div className = "list" key = {i}>
+                    <li> {comm} </li>
+                    {/* <li> {user} </li> */}
+                    <hr />
+                  </div>
+                );
+              })
+            }
+
+          </div>
+
+
+          <div className ="publish">
+            <input onChange = {(e)=> { setWrite(e.target.value) } } />
+            <button onClick = {  M_Comment }>등록</button>
+          </div>
+
+
         </div>
       </div>
     </>
