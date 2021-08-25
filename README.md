@@ -1,7 +1,11 @@
-#Front-end <br>
+# HallymPedia 
+Front-end 파트  repository <br>
 
 hallym-pedia는 '와챠피디아'를 모티브로 한림대학교 학생들이 모여 하는 첫번째 프로젝트로, [영화 추천 사이트] 입니다. <br>
 
+
+## 배포 사이트(Front 부분만 구현)
+https://seungmink.github.io/hallym-pedia/
 
 <br>
 
@@ -35,14 +39,24 @@ hallym-pedia는 '와챠피디아'를 모티브로 한림대학교 학생들이 �
 
 - 2021\. 08. 23: 메인 페이지, 로그인페이지, 영화 상세페이지, 영화 검색페이지 완성
 
-- 2021\. 08. 24: CssUpdate (Movie.js, SignIn.js, SignUp.js ,MovieInfo.js ,MovieSearch.js)
+- 2021\. 08. 24: Update CSS (Movie.js, SignIn.js, SignUp.js, MovieInfo.js, MovieSearch.js)
 
 ## 결과화면
 
-- css 업데이트 후, 화면 별로 캡처해서 올릴 에정
+### 1. Movie.js
+![Movie](https://user-images.githubusercontent.com/20696473/130581981-dc1039dd-d017-464c-92b4-e50df14811d2.png)
 
+### 2. MovieInfo.js
+![MovieInfo](https://user-images.githubusercontent.com/20696473/130582015-f3a558a0-8ac4-4f15-be87-ed72b3cc6d8d.png)
 
+### 3. MovieSearch.js
+![MovieSearch](https://user-images.githubusercontent.com/20696473/130582012-a0805cb5-36de-4ce0-82ec-f8a976d5cd9f.png)
 
+### 4. SignIn.js
+![SignIn](https://user-images.githubusercontent.com/20696473/130582006-27409e6a-6566-45e4-a5a4-b2fd3466fdfa.png)
+
+### 5. SignUp.js
+![SignUp](https://user-images.githubusercontent.com/20696473/130582009-c344bc67-391f-4b80-a62c-be8a18f1b7e3.png)
 
 
 
